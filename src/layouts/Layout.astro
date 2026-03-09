@@ -2,6 +2,7 @@
 interface Props {
 	title?: string;
 }
+import { ClientRouter } from "astro:transitions";
 
 const { title = "Lucio Morales - Dev" } = Astro.props;
 ---
@@ -23,6 +24,7 @@ const { title = "Lucio Morales - Dev" } = Astro.props;
 
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ClientRouter />
 	</head>
 	<body>
 		<slot />
