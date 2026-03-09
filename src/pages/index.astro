@@ -3,14 +3,15 @@ import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Mi Portfolio">
+<Layout>
 	<main>
 		<Hero />
 
 		<section class="proyectos">
 			<div class="content">
-				<h2>Mis Proyectos</h2>
-				<p>Aquí puedes ver mis trabajos más recientes.</p>
+				<div class="head-section">
+					<h2>Algunos de mis trabajos</h2>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -30,7 +31,15 @@ import Layout from "../layouts/Layout.astro";
 	}
 
 	h2 {
-		font-size: 2.5rem;
+		font-size: 2.6rem;
 		margin-bottom: 2rem;
+		font-style: italic;
+		color: #343434;
+	}
+
+	.head-section {
+		padding: 20px 0 0 40px;
+		border-bottom: 2px solid #b5b5b5;
+		/* background-color: #ffa4a4; */
 	}
 </style>
