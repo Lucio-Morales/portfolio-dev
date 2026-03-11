@@ -5,6 +5,7 @@ interface Props {
 import { ClientRouter } from "astro:transitions";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+const socialImageURL = new URL("../assets/banner.png", Astro.site);
 const { title = "Lucio Morales - Dev" } = Astro.props;
 ---
 
@@ -23,7 +24,7 @@ const { title = "Lucio Morales - Dev" } = Astro.props;
 			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
 			rel="stylesheet"
 		/>
-		<meta property="og:image" content="../assets/banner.png" />
+		<meta property="og:image" content={socialImageURL} />
 
 		<meta name="og:title" content="Portfolio - Lucio Morales" />
 		<meta
